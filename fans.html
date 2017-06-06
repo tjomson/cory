@@ -14,9 +14,21 @@
 <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FCory-in-the-House%2F108189549208874%3Ffref%3Dts&width=100&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId" width="300" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
 <div id="music">
-<audio autoplay>
+<audio autoplay id="musik">
   <source src="CoryRemix.m4a" type="audio/mpeg">
   <p>If you can read this, your browser does not support the audio element.</p>
 </audio>
+<script>
+var vid = document.getElementById("musik");
+function setNoVolume() { 
+    vid.volume = 0.0;
+} 
+</script>
+<button onclick="setNoVolume()" type="button">Stop music</button>
+
+<h1>interview with da king</h1>
+<iframe width="650" height="400"
+src="https://www.youtube.com/embed/X36JNt-nCgs">
+</iframe>
 </body>
 </html>
